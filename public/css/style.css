@@ -1,0 +1,187 @@
+* { 
+    margin: 0; padding: 0; box-sizing: border-box; 
+    /* font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;  */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    /* background: rgb(2, 70, 95); */
+}
+#chat{
+    margin-bottom: 50px; 
+    width: 80%;     
+    /* float: right; */
+    float: left;
+    padding-bottom: 50px;
+}
+#head{
+    padding: 15px;
+    background-color: rgba(35, 35, 99, 0.767);
+    /* background-color: #023B66; */
+    color: rgb(221, 215, 250);
+}
+#header{
+    float: left;
+    width: 82%;
+    height: 65px;
+    background-color: rgba(35, 35, 99, 0.767);
+    /* background-color: #023B66; */
+    color: rgb(221, 215, 250);
+    text-align: left;
+
+}
+#to_login{
+    /* text-align: center; */
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.header{
+    text-decoration:none;
+    color: rgb(221, 215, 250);
+}
+.link{
+    text-decoration:underline;
+    color: rgb(0, 217, 255);
+}
+a img{
+    max-width: 100px;
+    max-height: 100px;
+}
+a video{
+    max-width: 200px;
+    max-height: 200px;
+}
+.list{
+    width: 18%; 
+    min-height: 100%;
+    position: fixed;
+    background-color: rgba(151, 151, 229, 0.274);
+    text-align: center;
+    font-size: 25px;
+    right: 0;
+    border-color:  rgba(35, 35, 99, 0.767);
+    /* border-left: 6px solid rgba(35, 35, 99, 0.767); */
+    box-shadow:  0 0 5px rgba(0,0,0,.2);
+    color: rgba(20, 20, 61, 0.897);
+    -webkit-box-shadow: -8px 1px 14px -5px rgba(44,47,71, 0.486);
+    -moz-box-shadow: -8px 1px 14px -5px rgba(44,47,71, 0.4861);
+    box-shadow: -8px 1px 14px -5px rgba(44,47,71, 0.486);
+}
+#users{
+    list-style-type: none;
+}
+body { 
+    /* font: 18px Helvetica, Arial;    */
+    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif; 
+    font-size: 18px;
+    /* background-image: url("/img/background_4.jpg"); */
+    background-attachment:fixed;  
+    background-size: cover;
+    /* background-color: indigo; */
+    /* background-image: linear-gradient(to bottom, #3147844f ,#12368388 ,#4a6dba70 ); */
+    /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.856), rgba(161, 157, 201, 0.877)),  url("/img/background_3.jpg"); */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.438), rgba(161, 157, 201, 0.342)),  url("/img/background_3.jpg");
+}
+
+#inputF { 
+    -webkit-box-shadow: -2px -2px 5px 1px rgba(44,47,71,0.29);
+    -moz-box-shadow: -2px -2px 5px 1px rgba(44,47,71,0.29);
+    box-shadow: -2px -2px 5px 1px rgba(44,47,71,0.29);
+    border:0px;
+    background: rgba(33, 9, 65, 0.486); 
+    /* padding: 1px;  */
+    position: fixed; 
+    bottom: 0; 
+    width: 82%; 
+}
+#inputField { 
+    border: 0; 
+    /* padding: 10px; */
+    width: 90%; 
+    height: 40px; 
+    /* margin-right: .5%;  */
+    background: rgb(255, 255, 255);
+    padding-left: 10px;
+}
+#sendButton { 
+    width: 10%; 
+    height: inherit;
+    padding: 10px; 
+    color: aliceblue; 
+    font: 18px Helvetica, Arial; 
+    /* border-radius: 4px; */
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    background: rgb(65, 65, 148);
+    /* background-color: rgb(1, 54, 83); */
+    border: 0;
+    right: 0;
+}
+#sendButton:hover{
+    /* background: rgb(1, 35, 66); */
+    background: rgb(31, 31, 83);
+}
+#messages { 
+    list-style-type: none; margin: 0; padding: 0; 
+}
+#messages li { 
+    padding: 5px 10px; 
+    /* width: 90%; */
+    margin-left:5%;
+    box-shadow: 10px 10px 3px -2px rgba(46, 45, 45, 0.2);
+    /* border-radius: 20px; */
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    color: rgba(56, 17, 119, 0.842); ;
+}
+
+/* ungerade zeilen */
+#messages li:nth-child(odd) { 
+    background: rgba(66, 32, 219, 0.514); 
+    color: rgb(255, 255, 255);
+    width: 95%;
+    margin-left:5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 10px 10px 3px -2px rgba(46, 45, 45, 0.2);
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#messages li:nth-child(odd):hover{
+    background: rgba(154, 133, 247, 0.329); 
+}
+#messages li:nth-child(even):hover{
+    background: rgba(231, 225, 255, 0.596);
+}
+
+#from{
+    font-size: small;
+}
+
+#newUser{
+    font-style: italic;
+    font-size: smaller;
+}
+#users li{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    padding: 10px; 
+    text-align: left;
+    -webkit-box-shadow: inset -2px -2px 5px 1px rgba(64, 68, 102, 0.22);
+    -moz-box-shadow: inset -2px -2px 5px 1px rgba(44,47,71,0.22);
+    box-shadow: inset -2px -2px 5px 1px rgba(71, 76, 114, 0.22);
+}
+#users li:hover{
+    /* border-bottom: 1px dotted black; */
+    font-size: 22px;
+    background: rgba(231, 225, 255, 0.247);
+}
+
+/* private message is red */
+#p_from{
+      color:rgb(172, 0, 0);
+      font-size: small;
+  }
+
+hr {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(36, 1, 83, 0.5);
+}

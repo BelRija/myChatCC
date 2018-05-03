@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Chat</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="main.js"></script>
+
+  <body>
+    
+    <div id="header">
+      <p id="to_login"><a class="header" href="login.html"><img src="img/back.png"></a></p>      
+    </div>
+    <div class="container">
+      <div id="userList" class="list">
+        <div id="head">
+          <p>Users online</p>
+        </div>
+        <ul id="users" name="usersF">
+        </ul>
+      </div>
+      <div class="chat" id="chat" id="chat">
+        <ul id="messages"></ul>
+      </div>
+    </div>
+      <div id="inputF">
+        <form id="inputFieldForm" action="" method="" enctype="multipart/form-data" name="form">
+          <input id="inputField" autocomplete="off" /><input type="submit" id="sendButton" value="Send">
+          <!-- <button id="sendButton">Send</button> -->
+          <input id="sendFile" name="sendFile" type="file" multiple></input>    
+        </form>
+      </div>
+
+  </body>
+</html>
